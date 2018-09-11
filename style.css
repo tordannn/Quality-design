@@ -89,7 +89,7 @@ nav {
 .specialize-container {
 	width: 80%;
 	margin: 0 auto;
-	text-align: center;
+	/* text-align: center; */
 }
 .specialize-container h2 {
 	font-size: 35px;
@@ -184,7 +184,7 @@ nav {
 	content: '';
 }
 .posts {
-	/*margin: 0 auto;*/
+	/* margin: 0 auto; */
 	width: 90%;
 	display: grid;
 	/*margin: 0 auto;*/
@@ -220,11 +220,13 @@ footer {
 	
 }
 .footer-container {
+	/* text-align: center; */
+	overflow-x: hidden;
 	margin: 0 auto;
 	width: 90%;
 	display: grid;
-	grid-template-columns: 30% 35% 33%;
-	grid-column-gap:  3%;
+	grid-template-columns: 30% 35% 30%;
+	/* grid-column-gap:  3%; */
 	color: #fff;
 }
 .footer-container span {
@@ -274,16 +276,17 @@ footer {
 .social :nth-child(2)  {
 	margin-left: 10px;
 }
-.contacts img {
-	margin-top: 0px;
-	margin-right: 10px;
-	/* border-radius: 20px; */	
+.contacts p {
+	
+}
+.contacts p img {
+	/* margin-top: 15px; */
 }
 .contacts p {
 	font-size: 13px;
-	margin-top: 20px;
+	margin-top: 15px;
 }
-.contacts input {
+.feed input {
 	color: #ffea00;
 	border: none;
 	border-bottom: 2px solid #ffea00;
@@ -301,37 +304,28 @@ footer {
 .feed img {
 	margin-top: 2px;
 }
-.adress {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-}
 .adress img {
 	margin-top: -5px;
+	border-radius: 20px;
+}
+.adress {
+	display: grid;
+	grid-template-columns: 10% 90%;
 }
 .phone {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+	display: grid;
+	grid-template-columns: 10% 90%;
 }
 .email {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+	display: grid;
+	grid-template-columns: 10% 90%;
 }
-
-
-
-
-
-
-
+.phone img {
+	border-radius: 20px;
+}
+.email img {
+	border-radius: 20px;
+}
 
 
 
@@ -340,6 +334,11 @@ footer {
 
 
 @media screen and (max-width: 420px) {
+	body {
+	  overflow-x: hidden;
+	  /* max-width: 1150px; */
+	  padding: 0;
+	}
 	.header-container {
 		width: 100%;
 		display: flex;
@@ -413,7 +412,143 @@ footer {
 		margin-top: 15px;
 	}
 	.posts {
+	margin: 0 auto;
 	width: 90%;
 	display: grid;
 	grid-template-columns: auto;
+	}
+	.footer-container {
+	margin: 0 auto;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 40% 30% 30%;
+	/* grid-column-gap: 5%; */
+	color: #fff;
 }
+	.feed input {
+	color: #ffea00;
+	border: none;
+	border-bottom: 2px solid #ffea00;
+	background: #414146;
+	height: 28px;
+	width: 50px;
+	}
+	.social {
+	margin-top: 20px;
+	display: block;
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+	.header-container {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	.main-menu {
+		display: none;
+	}
+	.main-menu li {
+		font-size: 12px;
+		width: 100%;
+		display: block;
+	}
+	.main-menu a {
+		display: block;
+		padding: 8px;
+	}
+	.toggle-button {
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		color: #000;
+		margin-top: 30px;
+	}
+	.toggle-button:after {
+		content: attr(data-open);
+		display: block;
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .main-menu {
+		display: block;
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+		content: attr(data-close);
+	}
+	.header-container a {
+		margin-right: -60px;
+	}
+	.main-menu {
+		position: relative;
+		top: 30px;
+		right: 55px;
+	}
+	.top-slide {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.top-slide h2 {
+		font-size: 32px;
+	}
+	.top-slide p {
+		font-size: 16px;
+	}
+	.specialize-container p {
+		font-size: 16px;
+	}
+	.specialize-cards {
+		display: grid;
+		grid-template-columns: auto auto;
+		/* display: flex;
+		flex-direction: column; */
+		margin: 0 auto;
+		justify-content: space-around;
+		/*margin: 120px;*/
+	}
+	.specialize-cards :nth-child(3) {
+		margin-top: 140px;
+	}
+	.specialize-cards :nth-child(4) {
+		margin-top: 140px;
+	}
+	.card:not(:nth-child(1)) {
+		/* margin-top: 150px; */
+	}
+	.portfolio span {
+		margin-top: 15px;
+	}
+	.posts {
+	width: 90%;
+	display: grid;
+	grid-template-columns: auto auto;
+	margin: 0 auto;
+	}
+	.footer-container {
+	margin: 0 auto;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 40% 30% 30%;
+	/* grid-column-gap: 5%; */
+	color: #fff;
+}
+	.feed input {
+	color: #ffea00;
+	border: none;
+	border-bottom: 2px solid #ffea00;
+	background: #414146;
+	height: 28px;
+	width: 50px;
+	}
+	.social {
+	margin-top: 20px;
+	display: block;
+	}
+	
+}
+
+
+
+@media screen and (min-width: 1025px){
+	
+}
+ 
