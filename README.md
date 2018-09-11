@@ -1,2 +1,2 @@
-# Quality-design-
+# Quality design 
 Training Project 
