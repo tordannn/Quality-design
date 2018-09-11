@@ -1,3 +1,3 @@
 # Quality design 
-Training Project 
+Training Project <br>
 See it: https://rawgit.com/tordannn/Quality-design-/master/index.html
