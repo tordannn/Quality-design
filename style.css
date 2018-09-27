@@ -89,7 +89,7 @@ nav {
 .specialize-container {
 	width: 80%;
 	margin: 0 auto;
-	/* text-align: center; */
+	 text-align: center; 
 }
 .specialize-container h2 {
 	font-size: 35px;
