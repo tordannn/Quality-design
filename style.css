@@ -573,7 +573,30 @@ footer {
 
 
 
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1025px) /*and (max-width: 1920px)*/{
+	.specialize-cards {
+		/*margin-right: 10%;*/
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		/* display: flex;
+		flex-direction: column; */
+		margin: 0 auto;
+		justify-content: space-around;
+		/*margin: 120px;*/
+	}
+	.card {
+		margin-right: 2%;
+	}
+	.portfolio {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.posts {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		/*justify-content: space-between;*/
+	}
 	
 }
  
