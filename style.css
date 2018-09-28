@@ -410,11 +410,15 @@ footer {
 	.portfolio span {
 		margin-top: 15px;
 	}
+	.portfolio {
+		width: 100%;
+		margin: 0 auto;
+	}
 	.posts {
-	margin: 0 auto;
-	width: 90%;
-	display: grid;
-	grid-template-columns: auto;
+		margin: 0 auto;
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto;
 	}
 	.footer-container {
 	margin: 0 auto;
@@ -438,6 +442,9 @@ footer {
 	height: 28px;
 	width: 50px;
 	margin-right: -50px;
+	}
+	.tweets {
+		margin-left: 5%;
 	}
 	.social {
 	margin-top: 20px;
@@ -585,7 +592,7 @@ footer {
 		/*margin: 120px;*/
 	}
 	.card {
-		margin-right: 2%;
+		margin: 1%;
 	}
 	.portfolio {
 		width: 90%;
@@ -597,6 +604,8 @@ footer {
 		grid-template-columns: auto auto auto;
 		/*justify-content: space-between;*/
 	}
-	
+	.tweets {
+		margin-left: 5%;
+	}
 }
  
