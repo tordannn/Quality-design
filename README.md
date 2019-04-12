@@ -1,5 +1,7 @@
 # SPA Training Project 
 
-	<code>Don't judge too harshly</code>
+	```
+	Don't judge too harshly
+	```
 
 See it: https://tordannn.github.io/Quality-design/
