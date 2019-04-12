@@ -7,7 +7,7 @@ body {
 }
 header {
 	background: #f6f6f6;
-	padding: 22px 0px;
+	padding: 22px 0px;  
 }
 li{
 	list-style: none;
@@ -16,7 +16,7 @@ li{
 a{
 	text-decoration: none;
 }
-.header-container {
+.header-container {   
 	width: 90%;
 	margin: 0 auto;
 	display: flex;
